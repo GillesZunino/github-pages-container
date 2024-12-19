@@ -15,8 +15,23 @@ gem "rspec"
 # github pages
 gem "github-pages", "~> 232", group: :jekyll_plugins
 
-# Default theme for new Jekyll sites
-gem "minima", "~> 2.5.1"
+# Themes for new Jekyll sites
+gem "minima"
+
+gem "jekyll-theme-architect"
+gem "jekyll-theme-cayman"
+gem "jekyll-theme-dinky"
+gem "jekyll-theme-hacker"
+gem "jekyll-theme-leap-day"
+gem "jekyll-theme-merlot"
+gem "jekyll-theme-midnight"
+gem "jekyll-theme-minimal"
+gem "jekyll-theme-modernist"
+gem "jekyll-theme-primer"
+gem "jekyll-theme-slate"
+gem "jekyll-theme-tactile"
+gem "jekyll-theme-time-machine"
+gem "jekyll-titles-from-headings"
 
 # Plugins
 group :jekyll_plugins do
