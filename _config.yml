@@ -57,6 +57,7 @@ include:
   - README.md
 
 exclude:
+  - LICENSE
   - Gemfile
   - Gemfile.lock
   - _site/
