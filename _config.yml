@@ -1,0 +1,68 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2024, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+# The subpath of your site, e.g. /blog
+baseurl: ""
+# The base hostname & protocol for your site, e.g. http://example.com
+url: ""
+
+# Github pages require a repository configuration
+repository:
+
+encoding: utf-8
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jekyll-relative-links
+
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
+
+relative_links:
+  enabled: true
+  collections: true
+
+highlighter: rouge
+
+gist:
+  noscript: false
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+
+include:
+  - pages/
+  - README.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _site/
+  - .devcontainer/
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
